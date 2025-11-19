@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: trm_urun_kesfi
+    env: python
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: python urun_bulucu.py
